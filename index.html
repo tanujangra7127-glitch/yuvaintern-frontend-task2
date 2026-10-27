@@ -1,14 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Design Showcase - YuvaIntern Task 2</title>
+    <title>FlexTech | Responsive Web Design</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header class="navbar">
-        <div class="logo">FlexTech</div>
+        <a href="#home" class="logo">Flex<span>Tech</span>.</a>
         <nav class="nav-links">
             <a href="#home">Home</a>
             <a href="#features">Features</a>
@@ -17,34 +19,114 @@
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Cross-Device Seamless Web Experiences</h1>
-            <p>Building highly responsive, modern, and fluid interfaces using advanced CSS grid and media queries.</p>
-            <a href="#features" class="btn">Explore Features</a>
-        </div>
-    </section>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="tagline">YUVAINTERN · WEEK 2 TASK</p>
+                <h1>Cross-Device <span>Seamless</span> Web Experiences</h1>
+                <p class="description">
+                    Building modern, flexible and user-friendly websites
+                    using CSS Grid, Flexbox and responsive media queries.
+                </p>
+                <a href="#features" class="btn">Explore Features →</a>
+            </div>
 
-    <main id="features" class="container">
-        <h2>Key Responsive Features</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Fluid Grids</h3>
-                <p>Layouts automatically reflow and scale based on viewport width using CSS Grid and Flexbox.</p>
+            <div class="hero-visual">
+                <div class="screen desktop">
+                    <div class="screen-top">● ● ●</div>
+                    <div class="screen-content">
+                        <div class="screen-banner"></div>
+                        <div class="screen-lines"></div>
+                        <div class="screen-lines small"></div>
+                        <div class="mini-grid">
+                            <div></div><div></div><div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="screen phone">
+                    <div class="phone-top"></div>
+                    <div class="phone-banner"></div>
+                    <div class="phone-line"></div>
+                    <div class="phone-line"></div>
+                    <div class="phone-box"></div>
+                </div>
+                <p class="visual-caption">One website. Every screen.</p>
             </div>
-            <div class="card">
-                <h3>Flexible Images</h3>
-                <p>Images scale gracefully within parent containers without overflowing or distortion.</p>
+        </section>
+
+        <section id="features" class="section container">
+            <div class="section-heading">
+                <p class="tagline">BUILT FOR EVERY VIEWPORT</p>
+                <h2>Key Responsive Features</h2>
+                <p>Smart design techniques make websites work on every device.</p>
             </div>
-            <div class="card">
-                <h3>Media Queries</h3>
-                <p>Custom media breakpoints target mobile, tablet, and widescreen display formats effortlessly.</p>
+
+            <div class="feature-grid">
+                <article class="card">
+                    <div class="icon purple">▦</div>
+                    <h3>Fluid Grids</h3>
+                    <p>CSS Grid and Flexbox rearrange content according to screen width.</p>
+                </article>
+
+                <article class="card">
+                    <div class="icon pink">◈</div>
+                    <h3>Flexible Elements</h3>
+                    <p>Flexible containers and sizing help prevent content overflow.</p>
+                </article>
+
+                <article class="card">
+                    <div class="icon blue">⌘</div>
+                    <h3>Media Queries</h3>
+                    <p>Breakpoints adjust layouts for mobile, tablet and desktop screens.</p>
+                </article>
             </div>
-        </div>
+        </section>
+
+        <section id="showcase" class="showcase section">
+            <div class="container showcase-grid">
+                <div>
+                    <p class="tagline">RESPONSIVE BY DESIGN</p>
+                    <h2>Made to fit your screen.</h2>
+                    <p class="description">
+                        This layout uses flexible columns and responsive spacing.
+                        On smaller screens, content stacks vertically to remain
+                        clear, readable and easy to use.
+                    </p>
+                    <ul>
+                        <li>✓ Desktop: multi-column layout</li>
+                        <li>✓ Tablet: balanced layout</li>
+                        <li>✓ Mobile: single-column layout</li>
+                    </ul>
+                </div>
+
+                <div class="preview">
+                    <div class="preview-banner"></div>
+                    <div class="preview-grid">
+                        <div></div><div></div><div></div>
+                    </div>
+                    <p>Responsive website preview</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section container">
+            <div class="contact-box">
+                <div>
+                    <p class="tagline">YUVAINTERN WEEK 2</p>
+                    <h2>Thanks for visiting FlexTech!</h2>
+                    <p>Created by Tanu for the Responsive Web Design task.</p>
+                </div>
+                <a href="mailto:hello@example.com" class="btn light-btn">
+                    Contact Me →
+                </a>
+            </div>
+        </section>
     </main>
 
-    <footer id="contact">
-        <p>&copy; 2026 YuvaIntern Task 2 | Developed by Tanu</p>
+    <footer>
+        <p>© 2026 FlexTech | Developed by Tanu</p>
+        <a href="#home">Back to top ↑</a>
     </footer>
+
 </body>
 </html>
